@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+function generateText(letters, length){
+	var text = '';
+	for (var i = 0; i < length; i++){
+		var n = getRandomNumber(letters.length -1);
+		text = text + letters[n];
+	}
+	return text;
+}	
+function getRandomNumber(max){
+	return Math.round(Math.random() * max)
+}
+
+  alert('Welcome to the blind typing program')
+	while (true){
+  var text = generateText(['ф', 'а'], 10)
+  var userText = prompt(text);
+  if (userText == text){
+  	alert ('Nicely done m8');
+  	break;
+  } else {
+  	alert('u die\n try again')
+}
+}
+</script>
