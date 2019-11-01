@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var contributionSum = +prompt("Сумма вклада");
+	var contributionInterest = +prompt("Процент вклада");
+	var contributionInterest = contributionInterest/100;
+
+	var final = 'Изменение размера по годам\n';
+		for (var i = 1; i <= 5; i++) {
+			contributionSum = contributionSum + (contributionSum*contributionInterest);
+			final += i + ' год: ' + contributionSum.toFixed(2) + ' rub\n';
+		}
+	alert (final);	
+
+
+/* первый вариант (работает)
+	var contributionSum = +prompt("Сумма вклада");
+	var contributionInterest = +prompt("Процент вклада");
+	var contributionInterest = contributionInterest/100;
+	var y1 = contributionSum + (contributionSum*contributionInterest);
+	var y2 = y1 + (y1*contributionInterest);
+	var y3 = y2 + (y2*contributionInterest);
+	var y4 = y3 + (y3*contributionInterest);
+	var y5 = y4 + (y4*contributionInterest);
+alert (
+"1 год: " + y1.toFixed(2) + "рублей\n" +
+"2 год: " + y2.toFixed(2) + "рублей\n" +
+"3 год: " + y3.toFixed(2) + "рублей\n" +
+"4 год: " + y4.toFixed(2) + "рублей\n" +
+"5 год: " + y5.toFixed(2) + "рублей\n")
+*/	 
+</script>
