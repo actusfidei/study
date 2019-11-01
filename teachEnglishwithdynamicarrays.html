@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var words = [
+		['rain', 'дождь'],
+		['pain', 'боль'],
+		['code', 'код']
+	]
+	
+	while (words.length != 0){
+	var rng = parseInt(Math.random () * words.length)	
+	var userAnswer = prompt('Как перевести ' + words[rng][0]);
+		if (userAnswer == words[rng][1]) {
+			alert('Correct!')
+			words.splice (rng, 1); //удаляем подмассив из основного массива
+		} else {
+			alert('Wrong\n The right answer is ' + words[rng][1])
+		}
+	}	
+
+alert ('great job!')
+
+
+
+
+</script>

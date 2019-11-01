@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+alert ('Игра: запомни числа')
+var numbers = [10, 15, 34, 56, 70];
+alert (numbers);
+
+	var userAnswer = +prompt('Каким было первое число?');
+	if (userAnswer == numbers[0]){
+	alert("Correct! Keep it going")	
+	} else {
+		alert("Wrong pepeHands\n the correct answer is" + numbers[0])
+	}
+
+	var userAnswer = +prompt('Каким было последнее число?');
+	if (userAnswer == numbers [numbers.length -1]){
+	alert("Correct! Keep it going")	
+	} else {
+		alert("Wrong pepeHands\n the correct answer is" + numbers[numbers.length -1])
+	}
+
+
+	var n = parseInt(Math.random() * numbers.length)
+
+	userAnswer = +prompt('Каким было ' + (n + 1) + ' число?');
+	if (userAnswer == numbers[n]){
+	alert("You are INSANE! Congratulations!")	
+	} else {
+		alert("Wrong pepeHands\n the correct answer is" + numbers[n]);
+	}
+
+</script>
